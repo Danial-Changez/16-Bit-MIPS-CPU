@@ -1,0 +1,9 @@
+*.log
+*.jou
+*.str
+*.runs
+*.sim
+*.cache
+*.xpr
+.Xil/
+*.srcs
