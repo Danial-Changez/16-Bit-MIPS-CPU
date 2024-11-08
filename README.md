@@ -85,7 +85,7 @@ This project successfully implemented a 16-bit MIPS CPU supporting both standard
     ```
 3. **Simulating the Project**:
    - Open Vivado and load the project files.
-   - Run the simulation with `Instr.txt` for Part A or `Instr2.txt` for Part B.
+   - Run the simulation with `Instr.txt`.
    - Verify the waveform outputs against expected results.
 
 ## Official Report
