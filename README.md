@@ -31,7 +31,7 @@ The CPU is organized with several core modules:
 - **Jump Block**: Executes jumps to a new program address based on a 12-bit immediate value.
 - **PC Control MUX**: Selects the next PC address based on inputs from the PC increment, BNE block, or Jump block.
 
-## Block Diagram
+### Block Diagram
 <img width="913" height="578" alt="image" src="https://github.com/user-attachments/assets/17a470fd-73a6-43b1-b8e6-b6dec64e9279" />
 
 ## Instructions Implemented
