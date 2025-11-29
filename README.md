@@ -113,7 +113,6 @@ To access the report, you can either view it directly in this repository or down
 ## Contributors
 - Muhammad Shayan
 - Zain Siddiqui
-- Danial Changez
 
 ---
 
