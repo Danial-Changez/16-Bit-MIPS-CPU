@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install vsg==3.35.0
+      - name: VHDL style (vsg)
+        run: vsg -c vsg.yaml
+
+  ghdl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: GHDL analysis, latch check and testbench
+        run: >
+          docker run --rm -v "$PWD":/src -w /src
+          ghdl/ghdl:5.0.1-mcode-ubuntu-24.04
+          sh scripts/run_tests.sh

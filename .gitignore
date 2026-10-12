@@ -1,0 +1,20 @@
+# Vivado project output
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+.Xil/
+xsim.dir/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.xpr
+
+# GHDL libraries, simulation build output and local Python environments
+build/
+*.cf
+.venv/

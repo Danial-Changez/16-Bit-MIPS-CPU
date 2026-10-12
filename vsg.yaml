@@ -1,0 +1,28 @@
+# Configuration for VHDL Style Guide (vsg), https://github.com/jeremiah-c-leary/vhdl-style-guide
+#
+# Style reference: the rule set documented at
+# https://vhdl-style-guide.readthedocs.io (the vsg defaults). Every rule
+# is at its default except the ones under `rule`, each with its reason.
+file_list:
+  - rtl/*.vhd
+  - tb/*.vhd
+
+rule:
+  # Generics and constants are upper case, as the sources already write
+  # them (WIDTH, INPUT); everything else is lower case.
+  generic_007:
+    case: upper
+  generic_map_002:
+    case: upper
+  constant_004:
+    case: upper
+  # Initial values are kept: the memory model is loaded from a file
+  # through the initial value of its storage signal.
+  signal_007:
+    disable: true
+  # Rows of a constant table may stay on one line: the testbench lists one
+  # instruction per row, with its expected effect.
+  constant_016:
+    open_paren_new_line: ignore
+    close_paren_new_line: ignore
+    new_line_after_comma: ignore
